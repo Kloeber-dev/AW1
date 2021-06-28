@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form target="_self" method="POST">
+        <fieldset>
+            <legend> FORMULÁRIO </legend>
+            <fieldset>
+                <legend>DADOS PESSOAIS</legend>
+                <label for="fname">
+                    Primeiro Nome
+                </label><br>
+                <input type="text" name="fname" id="fname" placeholder="Digite seu primeiro nome" required="required"
+                    autofocus><br>
+                <label for="snome">
+                    Sobrenome
+                </label><br>
+                <input type="text" name="snome" id="snome" placeholder="Digite seu sobrenome" required="required"><br>
+                <label for="dataNasc">Data de Nascimento</label><br>
+                <input type="date" name="dataNasc" id="dataNasc" min="1901-01-01" max="2011-12-31"><br>
+                <label for="emailUsuario">E-mail</label><br>
+                <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Digite seu e-mail"
+                    required="required">
+                <hr>
+                <p>Gênero: </p>
+                <input type="radio" name="genero" id="Masculino">
+                <label for="Masculino">Masculino</label><br>
+                <input type="radio" name="genero" id="Feminino">
+                <label for="Feminino">Feminino</label>
+                <br>
+                <input type="radio" name="genero" id="Outro">
+                <label for="Outro">Outro</label><br>
+            </fieldset><br>
+
+            <label for="album">SELECIONE O SEU ÁLBUM FAVORITO</label>
+            <select id="album">
+                <option value="Lobos">Lobos</option>
+                <option value="Anti-Herói">Anti-Herói</option>
+                <option value="Honeymoon">Honeymoon</option>
+                <option value="Lust For Life">Lust For Life</option>
+                <option value="Ultraviolence">Ultraviolence</option>
+            </select> <br>
+            <hr>
+
+            <label for="filmes">ESCOLHA SEU FILME FAVORITO</label>
+            <input list="filmes" required="required">
+            <datalist id="filmes">
+                <option value="Coraline">Coraline</option>
+                <option value="Suspiria">Suspiria</option>
+                <option value="Luca">Luca</option>
+            </datalist><br>
+            <hr>
+
+            <label for="areadetexto">Digite sua opinião sobre o filme e álbum escolhidos: </label><br>
+            <textarea name="message" rows="10" cols="30" id="areadetexto">
+                    </textarea><br>
+            <hr>
+
+            <p>EM UM SANDUÍCHE, VOCÊ ADICIONARIA QUAIS ITENS?</p>
+            <input type="checkbox" name="Maionese" value="Maionese" id="Maionese">
+            <label for="Maionese">Maionese</label><br>
+            <input type="checkbox" name="Ketchup" value="Ketchup" id="Ketchup">
+            <label for="Ketchup">Ketchup</label><br>
+            <input type="checkbox" name="Mostarda" value="Mostarda" id="Mostarda">
+            <label for="Mostarda">Mostarda</label><br>
+            <input type="checkbox" name="Tomate" value="Tomate" id="Tomate">
+            <label for="Tomate">Tomate</label><br>
+            <input type="checkbox" name="Alface" value="Alface" id="Alface">
+            <label for="Alface">Alface</label>
+            <br>
+            <hr>
+
+            <label for="ilsutra">Digite algo</label>
+            <input type="text" name="ilustra" id="ilustra" readonly placeholder="Se conseguir :)">
+            <br>
+            <hr>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
