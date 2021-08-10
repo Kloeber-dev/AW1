@@ -224,16 +224,19 @@ h3.biog, .cIndexImpar {
 /* CONTATO-------------------- */
 .bodyContato{
     height: 100vh;
+    min-width: 436px;
 }
 
 .mainContato {
     display: flex;
     background-color: #DDDDDD;
+    justify-content: center;
 }
 
 form {
+    position: relative;
     margin:  3rem 8.437rem;
-    width: 80vw;
+    width: 100%;
     color: white;
     background-color: #262626;
     border-radius: 7px;
@@ -242,6 +245,7 @@ form {
 }
 
 input {
+    width: 100%;
     color: black;
     background-color: white;
     height: 2rem;
@@ -334,6 +338,11 @@ input[type="reset"]:hover, input[type="submit"]:hover{
     transform: scale(1.2);
 }
 
+::placeholder {
+    font-family: "Roboto", sans-serif;
+    padding-left: 1rem;
+}
+
 /* RESPONSIVIDADE-------------------- */
 
 @media(max-width: 900px) {
@@ -402,21 +411,43 @@ input[type="reset"]:hover, input[type="submit"]:hover{
         transform: scale(0.8);
     }
 
-    fieldset#contato {
-        padding: 2rem;
+    .nomesobrenome {
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .mainContato {
-        display: flex;
-        background-color: #DDDDDD;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
+    textarea {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 10px; 
+        height: 13rem;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
     }
+
+    input {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 10px; 
+        height: 2.5rem;
+        width: 100%;
+        padding-left: 20px;
+    }   
+    label {
+        font-size: clamp(1.4em, 1.25vw, 2em);
+    }
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    } 
 
     input[type="reset"], input[type="submit"]{
         transform: scale(0.8);
+    }
+
+    .nomesobrenome fieldset {
+        width: 100%;
     }
 
     .cIndexImpar, .cIndexPar{
@@ -431,11 +462,17 @@ input[type="reset"]:hover, input[type="submit"]:hover{
 @media(min-width: 0px) and (max-width:769px) {
     div, .cIndex0 {
         height: fit-content;
-        display: block;
+        /* display: block; */
         width:100vw;
     }
+
     div {
         padding-bottom: 1rem;
+    }
+
+    h2.TituloPA {
+        transform: scale(0.4);
+        display: block;
     }
 
     .cIndex0 h2 {
@@ -510,6 +547,58 @@ input[type="reset"]:hover, input[type="submit"]:hover{
         display: block;
         width: 90vw;
         align-self: center;
+    }
+
+    
+    .nomesobrenome {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    form {
+        position: relative;
+    }
+
+    .avaliacao, .avaliacaobotoes, .nomesobrenome {
+        width: 100%;
+    }
+
+    .avaliacaobotoes {
+        flex-wrap: wrap;
+    }
+
+    textarea {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 10px; 
+        height: 13rem;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    input {
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 10px; 
+        height: 2.5rem;
+        width: 100%;
+        padding-left: 20px;
+    }   
+    label {
+        font-size: clamp(1.4em, 1.25vw, 2em);
+    }
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    } 
+
+    input[type="reset"], input[type="submit"]{
+        transform: scale(0.8);
+    }
+
+    .nomesobrenome fieldset {
+        width: 100%;
     }
 
     #idFooter {

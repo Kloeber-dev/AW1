@@ -1,0 +1,70 @@
+.mainContato {
+    margin-left: 3.06rem;
+    margin-right: 3.06rem;
+}
+
+label {
+    font-size: clamp(1.4em, 1.25vw, 2em);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+input {
+    background: #F3F3F3;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+    height: 2.5rem;
+    width: 100%;
+    padding-left: 20px;
+}
+
+textarea {
+    background: #F3F3F3;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+    height: 13rem;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+fieldset {
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.formLado{
+    margin-bottom: 1rem;
+}
+
+.idAssunto,
+.idTexto,
+.idEmial {
+    margin-top: 1rem;
+}
+
+.botaoForm {
+    background-color: transparent;
+    border: 0.19rem solid var(--base-color);
+    color: var(--base-color);
+    height: 3rem;
+    width: 9.375rem;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+    font-size: clamp(1em, 1vw, 1.875em);
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.opcao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
