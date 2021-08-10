@@ -1,0 +1,705 @@
+/* BACKGROUNDS----------------------------- */
+
+/* INDEX----------------------------------- */
+.cIndex0 {
+    min-height: 90vh;
+    width: 100%;
+    /* adicionando imagem de fundo */
+    background: url('index_background/HEADER_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex1{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex2{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION2_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex3{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION3_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex4{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION4_MAIN.svg');
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+}
+
+#idIndex5{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION5_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex6{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION6_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#idIndex7{
+    min-height: 80vh;
+    width: 100%;
+    background: url('index_background/SECTION7_MAIN.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* LOBOS---------------------- */
+.lTitulo {
+    min-height: 90vh;
+    width: 100%;
+    background: url('lobos_background/HEADER.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa1 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('lobos_background/SECTION1_VOU_MORRER_SOZINHO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa2 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION2_ME_BEIJA_COM_RAIVA.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.lFaixa3 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION3_LINDO_DEMAIS.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa4 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION4_IMATURO.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.lFaixa5 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION5_AINDA_TE_AMO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa6 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION6_A_RUA.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.lFaixa7 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION7_LOBOS.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa8 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION8_EU_QUERO_SER_COMO_VOCÊ.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.lFaixa9 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION9_AQUI.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa10 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION10_MONSTROS.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.lFaixa11 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION11_FIM_DO_MUNDO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lFaixa12 {
+    min-height: 90vh;    
+    width: 100%;
+    background: url('lobos_background/SECTION12_RESSACA.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+/* ANTI-HEROI---------------------- */
+.ahTitulo {
+    min-height: 90vh;
+    width: 100%;
+    background: url('antiHeroi_background/HEADER.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa1 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION1_A_ÚLTIMA_NOITE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa2 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION2_TRISTE_PRA_SEMPRE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa3 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION3_ENQUANTO_ME_BEIJA.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa4 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION4_ESSA_EU_FIZ_PRO_NOSSO_AMOR.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa5 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION5_FIM_DE_FESTA.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa6 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION6_BARCELONA.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa7 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION7_VOCE_VAI_ME_DESTRUIR.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa8 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION8_VSF.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+}
+
+.ahFaixa9 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION9_HOTEL_SAN_DIEGO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ahFaixa10 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('antiHeroi_background/SECTION10\ _NOTADEVOZ8.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* PRIMEIRO ACÚSTICO---------------------- */
+.paTitulo {
+    min-height: 90vh;
+    width: 100%;
+    background: url('primeiroAcustico_background/HEADER.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paFaixa1 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('primeiroAcustico_background/SECTION1_AQUI.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paFaixa2 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('primeiroAcustico_background/SECTION2_ALCOOL.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paFaixa3 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('primeiroAcustico_background/SECTION3_RESSACA.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.paFaixa4 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('primeiroAcustico_background/SECTION4_IMATURO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sTitulo {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/HEADER.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sFaixa1 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION1_AMOR_PIRATA.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sFaixa2 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION2_CORINGA.svg');
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sFaixa3 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION3_CODINOME.svg');
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+}
+
+.sFaixa4 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION4_ME_LIGA.svg');
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+}
+
+.sFaixa5 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION5_LOUQUINHO.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sFaixa6 {
+    min-height: 80vh;
+    width: 100%;
+    background: url('singles_background/SECTION6_ALCOOL.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sFaixa7 {
+    min-height: 90vh;
+    width: 100%;
+    background: url('singles_background/SECTION7_DANÇA_PRA_MIM.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* IMAGENS-ESCONDIDAS */
+#cMbHeader, #cMbSection, .imagensmobile {
+    visibility: hidden;
+    position: fixed;
+    z-index: -100;
+}
+
+/* RESPONSIVIDADE------------------------------------ */
+
+@media(max-width: 900px) {
+    main header.cIndex0 {
+        background-position: 40%;
+    }
+    
+    #idIndex1{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex2{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex3{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex4{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex5{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex6{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    #idIndex7{
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    /* LOBOS---------------------- */
+    .lTitulo {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa1 {
+        background-size: cover;
+        background-position: 20%;
+    }
+    
+    .lFaixa2 {
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .lFaixa3 {
+        background-size: cover;
+        background-position: 20%;
+    }
+    
+    .lFaixa4 {
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .lFaixa5 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa6 {
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .lFaixa7 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa8 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa9 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa10 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa11 {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .lFaixa12 {
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    /* ANTI-HEROI---------------------- */
+    .ahTitulo {
+        background-size: cover;
+        background-position: 30%;
+    }
+    
+    .ahFaixa1 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .ahFaixa2 {
+        min-height: 80vh;
+        background-size: cover;
+        background-position: 80%;
+    }
+    
+    .ahFaixa3 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .ahFaixa4 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .ahFaixa5 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 30%;
+    }
+    
+    .ahFaixa6 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .ahFaixa7 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .ahFaixa8 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .ahFaixa9 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .ahFaixa10 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    /* PRIMEIRO ACÚSTICO---------------------- */
+    .paTitulo {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .paFaixa1 {
+        background-size: cover;    
+        background-position: 40%;
+    }
+    
+    .paFaixa2 {
+        background-size: cover;
+        background-position: 50%;
+    }
+    
+    .paFaixa3 {
+        background-size: cover;
+        background-position: 20%;
+    }
+    
+    .paFaixa4 {
+        background-size: cover;
+        background-position: 60%;
+    }
+
+    .sTitulo {
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .sFaixa1 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .sFaixa2 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .sFaixa3 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .sFaixa4 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .sFaixa5 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 40%;
+    }
+    
+    .sFaixa6 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 60%;
+    }
+    
+    .sFaixa7 {
+        min-height: 95vh;
+        background-size: cover;
+        background-position: 30%;
+    }   
+
+}
+
+@media(min-width: 900px) {
+    #idIndex1{
+        background-position: 40%;
+    }
+
+    #idIndex2{
+        background-position: 40%;
+    }
+
+    #idIndex3{
+        background-position: 40%;
+    }
+
+    #idIndex4{
+        background-position: 40%;
+    }
+    #idIndex5{
+        background-position: 40%;
+    }
+    #idIndex6{
+        background-position: 40%;
+    }
+    #idIndex7{
+        background-position: 40%;
+    }
+}
+
+@media(min-width: 0px) and (max-width:480px) {
+    .lTitulo, .ahTitulo, .paTitulo, .sTitulo, .cIndex0 {
+        min-height: fit-content;
+    }
+
+    h2.TituloPA{
+        transform: scale(0.4);
+    }
+
+    main header.cIndex0, #TagMain article div, main#mainDisco div{
+        background: transparent;
+        display: block;
+    }
+    img#cMbHeader, #cMbSection, .imagensmobile{
+        visibility: visible;
+        display: block;
+        z-index: 1;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media(min-width: 481px) and (max-width:769px){
+    .lTitulo, .ahTitulo, .paTitulo, .sTitulo, .cIndex0 {
+        min-height: fit-content;
+    }
+
+    h2.TituloPA{
+        transform: scale(0.8);
+    }
+
+    main header.cIndex0, #TagMain article div{
+        background: transparent;
+        display: block;
+    }
+
+    img#cMbHeader, #cMbSection{
+        visibility: visible;
+        display: block;
+        z-index: 1;
+        position: relative;
+        width: 100%;
+    }
+}
