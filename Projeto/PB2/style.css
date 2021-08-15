@@ -118,7 +118,7 @@ div section.FaixaImpar {
     justify-content:  center;
     align-items: center;
 }
-
+ 
 .FaixaPar {
     display: flex;
     flex-direction: column;
