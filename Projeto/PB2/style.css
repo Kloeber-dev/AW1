@@ -102,6 +102,7 @@ div section.FaixaImpar, div section.FaixaPar {
 }
 
 div section.FaixaImpar {
+    margin-right: 4rem;
     align-self: flex-end;
 }
 
@@ -109,7 +110,6 @@ div section.FaixaImpar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 4rem;
 }
 
 .FaixaImpar {
@@ -397,6 +397,10 @@ input[type="reset"]:hover, input[type="submit"]:hover{
         align-items: flex-start;
         align-self: flex-end;
         text-align: justify;
+    }
+
+    div section.FaixaImpar {
+        margin-right: 0;
     }
     
     .FaixaPar {
