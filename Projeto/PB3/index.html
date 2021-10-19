@@ -75,32 +75,33 @@
             <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="operator">C</button></td>
-                    <td><button class="operator">&#129044;</button></td>
-                    <td><button class="operator">/</button></td>
-                    <td><button class="operator c1">X</button></td>
+                    <td><button class="operator op" onclick="Limpa()">C</button></td>
+                    <td><button class="operator op" onclick="Apaga()">&#129044;</button></td>
+                    <td><button class="operator op" onclick="Inserir('/')">/</button></td>
+                    <td><button class="operator c1" onclick="Inserir('*')">X</button></td>
                 </tr>
                 <tr>
-                    <td><button class="number">7</button></td>
-                    <td><button class="number">8</button></td>
-                    <td><button class="number">9</button></td>
-                    <td><button class="operator c2">-</button></td>
+                    <td><button class="number" onclick="Inserir('8')">8</button></td>
+                    <td><button class="number" onclick="Inserir('7')">7</button></td>
+                    <td><button class="number" onclick="Inserir('9')">9</button></td>
+                    <td><button class="operator c2" onclick="Inserir('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="number">4</button></td>
-                    <td><button class="number">5</button></td>
-                    <td><button class="number">6</button></td>
-                    <td><button class="operator c3">+</button></td>
+                    <td><button class="number" onclick="Inserir('4')">4</button></td>
+                    <td><button class="number" onclick="Inserir('5')">5</button></td>
+                    <td><button class="number" onclick="Inserir('6')">6</button></td>
+                    <td><button class="operator c3" onclick="Inserir('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td><button class="number">1</button></td>
-                    <td><button class="number">2</button></td>
-                    <td><button class="number">3</button></td>
-                    <td rowspan="2"><button class="operator c4">=</button></td>
+                    <td><button class="number" onclick="Inserir('1')">1</button></td>
+                    <td><button class="number" onclick="Inserir('2')">2</button></td>
+                    <td><button class="number" onclick="Inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="operator c4" style="height: 106px;" onclick="Calcula()">=</button>
+                    </td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="number">0</button></td>
-                    <td><button class="number">.</button></td>
+                    <td colspan="2"><button class="number" style="width: 106px;" onclick="Inserir('0')">0</button></td>
+                    <td><button class="number" onclick="Inserir('.')">.</button></td>
                 </tr>
             </table>
         </div>

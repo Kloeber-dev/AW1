@@ -78,6 +78,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .calculator {
@@ -94,30 +95,16 @@ header {
     justify-content: center;
 }
 
-#result {
-    height: 120px;
+#resultado {
+    width: 88%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: larger;
 }
 
-#history {
-    text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: #919191;
-}
-
-#output {
-    text-align: right;
-    height: 60px;
-    margin: 10px 20px;
-    font-size: 30px;
-}
-
-#keyboard {
-    height: 400px;
-}
-
-.operator, .number, .empty {
+.operator, .number {
     width: 50px;
     height: 50px;
     margin: 15px;
@@ -128,7 +115,7 @@ header {
     font-size: 15px;
 }
 
-.number, .empty {
+.number{
     background-color: #eaedef;
 }
 
@@ -136,30 +123,39 @@ header {
     cursor: pointer;
 }
 
+.number:hover, .op:hover {
+    background-color: #919191;
+    transition: 0.2s;
+}
+
 .operator:active, .number:active {
     font-size: 13px;
 }
 
-.operator:focus, .number:focus, .empty:focus {
-    outline: 0;
-}
-
 .c1 {
+    opacity: 0.8;
     font-size: 20px;
     background-color: #20b2aa;
 }
 
+.c1:hover, .c2:hover, .c3:hover, .c4:hover {
+    opacity: 1;
+}
+
 .c2 {
+    opacity: 0.8;
     font-size: 20px;
     background-color: #ffa500;
 }
 
 .c3 {
+    opacity: 0.8;
     font-size: 20px;
     background-color: #f08080;
 }
 
 .c4 {
+    opacity: 0.8;
     font-size: 20px;
     background-color: #9477af;
 }
