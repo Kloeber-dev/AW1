@@ -18,7 +18,7 @@ header {
     background-color: #20b2aa;
     color: black;
     width: 100%;
-    height: 5rem;
+    height: 10vh;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -74,11 +74,13 @@ header {
 
 /* CALCULADORA============================================================ */
 #container {
-    height: 85vh;
+    padding: 2rem;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .calculator {
@@ -102,6 +104,7 @@ header {
     align-items: center;
     justify-content: right;
     font-size: larger;
+    text-align: right;
 }
 
 .operator, .number {
@@ -158,4 +161,111 @@ header {
     opacity: 0.8;
     font-size: 20px;
     background-color: #9477af;
+}
+
+/* POTENCIAS ============================================================ */
+.dados {
+    background-color: #eaedef;
+    height: 30vh;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+label {
+    padding: 1rem;
+}
+
+input {
+    border: solid 1px #919191;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+input[value=Calcular] {
+    border: none;
+    opacity: 0.8;
+    background-color: #20b2aa;
+    color: white;
+}
+
+input[value=Calcular]:hover {
+    opacity: 1;
+}
+
+input#resultado {
+    display: unset;
+    width: unset;
+    height: unset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#container > div {
+    position: relative;
+    padding: 1rem;
+}
+
+#container > a > img {
+    width: 30%;
+}
+
+#textoExplicativo {
+    padding: 0.7rem;
+    text-align: justify;
+    width: 80vw;
+}
+
+/* FOOTER-------------------- */
+#idFooter {
+    height: 4.375rem;
+    background-color: #20b2aa;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#idFooter ul {
+    list-style: none;
+    float: left;
+}
+
+#idFooter ul li {
+    position:relative;
+    float: left;
+}
+
+#idFooter ul li a {
+    color:white;
+    padding: 0.3125rem 0.625rem;
+    display: block;
+
+    text-decoration: none;
+}
+
+/* BARRA DE ROLAGEM =========================================== */
+::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+}
+     
+::-webkit-scrollbar-track {
+    background:#fff;
+}
+     
+::-webkit-scrollbar-thumb {
+    background: #eaedef;
 }

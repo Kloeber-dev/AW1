@@ -25,8 +25,8 @@
                     </a></li>
                 <li><a href="#">CÁLCULOS ESPECÍFICOS</a>
                     <ul>
-                        <li><a href="#">POTÊNCIAS</a></li>
-                        <li><a href="raizes.html">RAÍZES</a></li>
+                        <li><a href="potencias.html">POTÊNCIAS</a></li>
+                        <li><a href="#">RAÍZES</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,30 +34,30 @@
     </header>
     <main id="container">
         <p id="textoExplicativo">
-            A Potenciação, ou exponenciação, é um recurso matemático utilizado para multiplicar vários números iguais,
-            ou seja, quando se deseja multiplicar um fator por ele mesmo. O algarismo a ser multiplicado é chamado de
-            base e a quantidade de vezes é indicada no expoente.
+            Radiciação é a operação matemática inversa à potenciação. Enquanto a potenciação é uma multiplicação na qual
+            todos os fatores são iguais, a radiciação procura descobrir que fatores são esses, dando o resultado dessa
+            multiplicação.
         </p>
-        <a href="https://media.gcflearnfree.org/content/5d389d80e96a441bf8c2adb0_07_24_2019/Base-e-expoente.jpg"
-            target="_blank">
-            <img src="images/potencias.jpg" />
+        <a href="https://www.partesdel.com/wp-content/uploads/Partes-de-la-raiz-cuadrada..jpg" target="_blank">
+            <img src="images/radiciacao.jpg" style="width: 50%;" />
         </a>
-        <a id="textoExplicativo" href="https://beduka.com/blog/materias/matematica/potenciacao/" target="_blank">Saiba
+        <a id="textoExplicativo" href="https://brasilescola.uol.com.br/o-que-e/matematica/o-que-e-radiciacao.htm"
+            target="_blank">Saiba
             mais.</a>
         <div class="dados">
             <div style="padding-bottom: 1rem;">
-                <label for="base">
-                    Base
+                <label for="radicando">
+                    Radicando
                 </label>
-                <input type="number" name="base" id="base" placeholder="Digite a base" value="a">
-                <label for="expoente">
-                    Expoente
+                <input type="number" name="radicando" id="radicando" placeholder="Digite o radicando">
+                <label for="indice">
+                    Índice
                 </label>
-                <input type="number" name="expoente" id="expoente" placeholder="Digite o expoente" value="a">
-                <input type="button" value="Calcular" onclick="Potencia()">
+                <input type="number" name="indice" id="indice" placeholder="Digite o indice" min="2">
+                <input type="button" value="Calcular" onclick="Raiz()">
             </div>
             <div>
-                <label for="resultadop">Resultado:</label>
+                <label for="resultadop">Raiz:</label>
                 <span id="resultadop" style="border-bottom: solid 1px #000;"></span>
             </div>
         </div>

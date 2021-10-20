@@ -40,85 +40,43 @@ function Calcula() {
     }
 }
 
-// function getHistory() {
-//     return document.getElementById('history-value').innerText;
-// }
+function Potencia() {
+    var base = document.getElementById('base').value;
+    var expo = document.getElementById('expoente').value;
+    if (base == "") {
+        alert('Digite um Número');
+        document.getElementById('base').focus()
+    } else if (expo == "") {
+        alert('Digite um Número');
+        document.getElementById('expoente').focus();
+    }
+    var pot = Math.pow(base, expo);
+    document.getElementById('resultadop').innerHTML = pot;
+}
 
-// function printHistory(num) {
-//     document.getElementById('history-value').innerText = num;
-// }
-
-// function getOutput() {
-//     return document.getElementById('output-value').innerText;
-// }
-
-// function printOutput(num) {
-//     if (num == "") {
-//         document.getElementById('output-value').innerText = num;
-//     } else {
-//         document.getElementById('output-value').innerText = getFormattedNumber(num);
-//     }
-// }
-
-// function getFormattedNumber(num) {
-//     if (num == "-") {
-//         return "";
-//     }
-//     var n = Number(num);
-//     return n.toLocaleString('en');
-// }
-
-// function reverseNumberFormat(num) {
-//     return Number(num.replace(/,/g, ''));
-// }
-
-// var operator = document.getElementsByClassName('operator');
-// for (var i = 0; i < operator.length; i++) {
-//     operator[i].addEventListener('click', function () {
-//         if (this.id == "clear") {
-//             printHistory("");
-//             printOutput("");
-//         }
-//         else if (this.id == "backspace") {
-//             var output = reverseNumberFormat(getOutput()).toString();
-//             if (output) {
-//                 output = output.substr(0, output.length - 1);
-//                 printOutput(output);
-//             }
-//         }
-//         else {
-//             var output = getOutput();
-//             var history = getHistory();
-//             if (output == "" && history != "") {
-//                 if (isNaN(history[history.length - 1])) {
-//                     history = history.substr(0, history.length - 1);
-//                 }
-//             }
-//             if (output != "" || history != "") {
-//                 output = output == "" ? output : reverseNumberFormat(output);
-//                 history = history + output;
-//                 if (this.id == "=") {
-//                     var result = eval(history);
-//                     printOutput(result);
-//                     printHistory("");
-//                 }
-//                 else {
-//                     history = history + this.id;
-//                     printHistory(history);
-//                     printOutput("");
-//                 }
-//             }
-//         }
-//     });
-// }
-
-// var number = document.getElementsByClassName("number");
-// for (var i = 0; i < number.length; i++) {
-//     number[i].addEventListener('click', function () {
-//         var output = reverseNumberFormat(getOutput());
-//         if (output != NaN) {
-//             output = output + this.id;
-//             printOutput(output);
-//         }
-//     })
-// }
+function Raiz() {
+    verificaResultado = false;
+    var rad;
+    var indice = document.getElementById('indice').value;
+    var radicando = document.getElementById('radicando').value;
+    if (radicando == "") {
+        alert('Digite um Número');
+        document.getElementById('radicando').focus();
+    } else if (indice < 2 || indice == "") {
+        alert('Digite um Número que seja maior ou igual a 2');
+        document.getElementById('indice').focus();
+    } else if (indice % 2 == 0 && radicando < 0) {
+        alert('Digite um índice par para que a raiz seja um número real')
+        document.getElementById('indice').focus();
+    } else if (indice % 3 == 0 && radicando < 0) {
+        radicando *= (-1);
+        rad = Math.pow(radicando, (1 / indice));
+        document.getElementById('resultadop').innerHTML = rad;
+    } else {
+        verificaResultado = true;
+    }
+    if (verificaResultado) {
+        rad = Math.pow(radicando, (1 / indice));
+        document.getElementById('resultadop').innerHTML = rad;
+    }
+}
