@@ -24,9 +24,9 @@
                     </a></li>
                 <li><a href="#">CÁLCULOS ESPECÍFICOS</a>
                     <ul>
-                        <li><a href="#">POTÊNCIAS</a></li>
+                        <li><a href="potencias.html">POTÊNCIAS</a></li>
                         <li><a href="raizes.html">RAÍZES</a></li>
-                        <li><a href="fatorial.html">FATORIAL</a></li>
+                        <li><a href="#">FATORIAL</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,27 +34,23 @@
     </header>
     <main id="container">
         <p id="textoExplicativo">
-            A Potenciação, ou exponenciação, é um recurso matemático utilizado para multiplicar vários números iguais,
-            ou seja, quando se deseja multiplicar um fator por ele mesmo. O algarismo a ser multiplicado é chamado de
-            base e a quantidade de vezes é indicada no expoente.
+            O fatorial é uma operação muito importante para o estudo e desenvolvimento da análise combinatória. Na
+            matemática o número seguido do símbolo de exclamação (!) é conhecido como fatorial, por exemplo, x! ... O
+            fatorial de um número natural n é a multiplicação de n pelos seus antecessores.
         </p>
-        <a href="https://media.gcflearnfree.org/content/5d389d80e96a441bf8c2adb0_07_24_2019/Base-e-expoente.jpg"
+        <a href="https://blog.professorferretto.com.br/wp-content/uploads/2019/09/fatoriais-de-varios-numeros.png"
             target="_blank">
-            <img src="images/potencias.jpg" />
+            <img src="images/fatorial.png" style="width: 50%;" />
         </a>
-        <a id="textoExplicativo" href="https://beduka.com/blog/materias/matematica/potenciacao/" target="_blank">Saiba
+        <a id="textoExplicativo" href="https://brasilescola.uol.com.br/matematica/fatorial.htm" target="_blank">Saiba
             mais.</a>
         <div class="dados">
             <div style="padding-bottom: 1rem;">
-                <label for="base">
-                    Base
+                <label for="fatorial">
+                    Fatorial
                 </label>
-                <input type="number" name="base" id="base" placeholder="Digite a base" value="a">
-                <label for="expoente">
-                    Expoente
-                </label>
-                <input type="number" name="expoente" id="expoente" placeholder="Digite o expoente" value="a">
-                <input type="button" value="Calcular" onclick="Potencia()">
+                <input type="number" name="fatorial" id="fatorial" placeholder="Número p/ saber o fatorial">
+                <input type="button" value="Calcular" onclick="Fatorial()">
             </div>
             <div>
                 <label for="resultadop">Resultado:</label>

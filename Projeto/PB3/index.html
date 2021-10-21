@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700,100" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -27,6 +26,7 @@
                     <ul>
                         <li><a href="potencias.html">POTÊNCIAS</a></li>
                         <li><a href="raizes.html">RAÍZES</a></li>
+                        <li><a href="fatorial.html">FATORIAL</a></li>
                     </ul>
                 </li>
             </ul>
@@ -39,32 +39,33 @@
             <table>
                 <tr>
                     <td><button class="operator op" onclick="Limpa()">C</button></td>
-                    <td><button class="operator op" onclick="Apaga()">&#129044;</button></td>
-                    <td><button class="operator op" onclick="Inserir('/')">/</button></td>
+                    <td colspan="2"><button class="operator op" onclick="Apaga()"><i
+                                class="fas fa-arrow-left"></i></button></td>
                     <td><button class="operator c1" onclick="Inserir('*')">X</button></td>
                 </tr>
                 <tr>
                     <td><button class="number" onclick="Inserir('7')">7</button></td>
                     <td><button class="number" onclick="Inserir('8')">8</button></td>
                     <td><button class="number" onclick="Inserir('9')">9</button></td>
-                    <td><button class="operator c2" onclick="Inserir('-')">-</button></td>
+                    <td><button class="operator c5" onclick="Inserir('/')">/</button></td>
                 </tr>
                 <tr>
                     <td><button class="number" onclick="Inserir('4')">4</button></td>
                     <td><button class="number" onclick="Inserir('5')">5</button></td>
                     <td><button class="number" onclick="Inserir('6')">6</button></td>
-                    <td><button class="operator c3" onclick="Inserir('+')">+</button></td>
+                    <td><button class="operator c2" onclick="Inserir('-')">-</button></td>
                 </tr>
                 <tr>
                     <td><button class="number" onclick="Inserir('1')">1</button></td>
                     <td><button class="number" onclick="Inserir('2')">2</button></td>
                     <td><button class="number" onclick="Inserir('3')">3</button></td>
-                    <td rowspan="2"><button class="operator c4" style="height: 106px;" onclick="Calcula()">=</button>
+                    <td><button class="operator c3" onclick="Inserir('+')">+</button></td>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2"><button class="number" onclick="Inserir('0')">0</button></td>
                     <td><button class="number" onclick="Inserir('.')">.</button></td>
+                    <td><button class="operator c4" onclick="Calcula()">=</button>
                 </tr>
             </table>
         </div>
@@ -82,6 +83,7 @@
         </nav>
     </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3eecc79a6a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
