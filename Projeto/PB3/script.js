@@ -85,14 +85,14 @@ function Fatorial() {
     verificaResultado = false;
     var fat = Number(document.getElementById('fatorial').value);
 
-    if (fat == "") {
+    if (fat === "") {
         alert('Digite um Número');
         document.getElementById('fatorial').focus();
     } else if (fat < 0 || !Number.isInteger(fat)) {
         alert('Digite um Número Natural');
         document.getElementById('fatorial').focus();
     }
-    else if (fat == 0 || fat == 1) {
+    else if (fat === 0 || fat == 1) {
         fat = 1;
         verificaResultado = true;
     }
@@ -108,3 +108,4 @@ function Fatorial() {
         document.getElementById('resultadop').innerHTML = result;
     }
 }
+

@@ -16,15 +16,18 @@
 
 <body>
     <header>
+        <input type="checkbox" id="bt_menu">
+        <label for="bt_menu">&#9776;</label>
+        <img src="CALCULA TUDO.svg" alt="Calcula Tudo" id="imageNoCheck">
         <nav id="idHeader">
             <ul>
-                <li><img src="CALCULA TUDO.svg" alt="calcula tudo"></li>
+                <li><img src="CALCULA TUDO.svg" alt="calcula tudo" id="imageNoCheck2"></li>
                 <li><a href="index.html">
                         CALCULADORA
                     </a></li>
                 <li><a href="#">CÁLCULOS ESPECÍFICOS</a>
                     <ul>
-                        <li><a href="#">POTÊNCIAS</a></li>
+                        <li><a href="potencias.html">POTÊNCIAS</a></li>
                         <li><a href="raizes.html">RAÍZES</a></li>
                         <li><a href="fatorial.html">FATORIAL</a></li>
                     </ul>
@@ -38,8 +41,7 @@
             ou seja, quando se deseja multiplicar um fator por ele mesmo. O algarismo a ser multiplicado é chamado de
             base e a quantidade de vezes é indicada no expoente.
         </p>
-        <a href="https://media.gcflearnfree.org/content/5d389d80e96a441bf8c2adb0_07_24_2019/Base-e-expoente.jpg"
-            target="_blank">
+        <a href="images/potencias.jpg" target="_blank">
             <img src="images/potencias.jpg" />
         </a>
         <a id="textoExplicativo" href="https://beduka.com/blog/materias/matematica/potenciacao/" target="_blank">Saiba
@@ -49,11 +51,11 @@
                 <label for="base">
                     Base
                 </label>
-                <input type="number" name="base" id="base" placeholder="Digite a base" value="a">
+                <input type="number" name="base" id="base" placeholder="Digite a base">
                 <label for="expoente">
                     Expoente
                 </label>
-                <input type="number" name="expoente" id="expoente" placeholder="Digite o expoente" value="a">
+                <input type="number" name="expoente" id="expoente" placeholder="Digite o expoente">
                 <input type="button" value="Calcular" onclick="Potencia()">
             </div>
             <div>
