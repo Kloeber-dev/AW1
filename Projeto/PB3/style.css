@@ -127,10 +127,9 @@ label[for="bt_menu"]{
 #container > div.calculator {
     flex-direction: row;
     width: 20rem;
-    height: 32.5rem;
     background-color: var(--cinza-claro);
     margin: 0 auto;
-    position: absolute;
+    position: relative;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
     display: flex;
@@ -377,6 +376,36 @@ div#d2, div#d3, div#d4, div#d5, div#d6 {
     }
     #imageNoCheck2 {
         display: block;
+    }
+}
+
+@media (min-width: 500px) and (max-width:900px) {
+    #container > a > img[src="images/fatorial.png"] {
+        width: 50%;
+    }
+}
+
+@media (min-width: 0px) and (max-width:280px) {
+    .operator, .number {
+        margin: 8px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (min-width: 0px) and (max-width:320px) {
+    table {
+        border-spacing: 0px;
+    }
+    #container > div.calculator {
+        flex-direction: column;
+        align-items: initial;
+        width: min-content;
+    }
+    .operator, .number {
+        margin: 8px;
+        height: 40px;
+        width: 40px;
     }
 }
 
