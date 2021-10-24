@@ -9,11 +9,19 @@ html{
 }
 
 body{
+    background: rgb(210,193,220);
+background: linear-gradient(70deg, rgba(210,193,220,1) 0%, rgba(105,39,131,1) 97%, rgba(104,36,131,1) 100%);
     font-family: 'Roboto', sans-serif;
     background-image: url(https://dbdzm869oupei.cloudfront.net/img/mantels/preview/22291.png);
     background-size: cover;
     color: rgb(48, 48, 48);
     padding: 3rem;
+}
+
+#container {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
 }
 
 h1, h3{

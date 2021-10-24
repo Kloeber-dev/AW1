@@ -45,14 +45,18 @@ function Potencia() {
     var base = document.getElementById('base').value;
     var expo = document.getElementById('expoente').value;
     if (base === "") {
-        alert('Digite um Número');
+        Swal.fire('Digite um Número');
         document.getElementById('base').focus()
     } else if (expo === "") {
-        alert('Digite um Número');
+        Swal.fire('Digite um Número');
         document.getElementById('expoente').focus();
+    } else {
+        verificaResultado = true;
     }
-    var pot = Math.pow(base, expo);
-    document.getElementById('resultadop').innerHTML = pot;
+    if (verificaResultado) {
+        var pot = Math.pow(base, expo);
+        document.getElementById('resultadop').innerHTML = pot;
+    }
 }
 
 function Raiz() {
@@ -61,13 +65,13 @@ function Raiz() {
     var indice = document.getElementById('indice').value;
     var radicando = document.getElementById('radicando').value;
     if (radicando === "") {
-        alert('Digite um Número');
+        Swal.fire('Digite um Número');
         document.getElementById('radicando').focus();
     } else if (indice < 2 || indice === "") {
-        alert('Digite um Número que seja maior ou igual a 2');
+        Swal.fire('Digite um Número que seja maior ou igual a 2');
         document.getElementById('indice').focus();
     } else if (indice % 2 == 0 && radicando < 0) {
-        alert('Digite um índice par para que a raiz seja um número real')
+        Swal.fire('Digite um índice par para que a raiz seja um número real')
         document.getElementById('indice').focus();
     } else if (indice % 3 == 0 && radicando < 0) {
         radicando *= (-1);
@@ -87,10 +91,10 @@ function Fatorial() {
     var fat = Number(document.getElementById('fatorial').value);
 
     if (fat === "") {
-        alert('Digite um Número');
+        Swal.fire('Digite um Número');
         document.getElementById('fatorial').focus();
     } else if (fat < 0 || !Number.isInteger(fat)) {
-        alert('Digite um Número Natural');
+        Swal.fire('Digite um Número Natural');
         document.getElementById('fatorial').focus();
     }
     else if (fat === 0 || fat == 1) {
@@ -107,6 +111,129 @@ function Fatorial() {
     }
     if (verificaResultado) {
         document.getElementById('resultadop').innerHTML = result;
+    }
+}
+
+function Calcular() {
+
+}
+
+function CalculaArea(e) {
+    let result;
+    let htmlResult = document.getElementsByClassName('resultadoArea')
+    verificaResultado = false;
+    switch (e) {
+        // quadrado
+        case '1':
+            var lado = document.getElementById('lado').value;
+            if (lado === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('lado').focus();
+            } else {
+                verificaResultado = true;
+            }
+            if (verificaResultado) {
+                result = Math.pow(lado, 2);
+                htmlResult[0].innerHTML = result
+            }
+            break;
+
+        // retangulo
+        case '2':
+            let base = document.getElementById('base').value;
+            let altura = document.getElementById('altura').value;
+            if (base === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('base').focus();
+            } else if (altura === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('altura').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = base * altura;
+                htmlResult[1].innerHTML = result
+            }
+            break;
+
+        // triangulo
+        case '3':
+            let base1 = document.getElementById('baset').value;
+            let altura1 = document.getElementById('alturat').value;
+            if (base1 === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('baset').focus();
+            } else if (altura1 === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('alturat').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = (base1 * altura1) / 2
+                htmlResult[2].innerHTML = result
+            }
+            break;
+
+        // circunferencia
+        case '4':
+            let raio = document.getElementById('raio').value;
+            if (raio === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('raio').focus();
+            } else {
+                verificaResultado = true;
+            }
+            if (verificaResultado) {
+                result = Math.pow(raio, 2) * Math.PI;
+                var aux = result.toFixed(2);
+                result = parseFloat(aux)
+                htmlResult[3].innerHTML = result;
+            }
+            break;
+
+        // Paralelogramo
+        case '5':
+            let base2 = document.getElementById('basep').value;
+            let altura2 = document.getElementById('alturap').value;
+            if (base2 === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('basep').focus();
+            } else if (altura2 === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('alturap').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = base2 * altura2
+                htmlResult[4].innerHTML = result
+            }
+            break;
+
+        // Losango
+        case '6':
+            let diagma = document.getElementById('diagma').value;
+            let diagme = document.getElementById('diagme').value;
+            if (diagma === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('diagma').focus();
+            } else if (diagme === "") {
+                Swal.fire('Digite um Número')
+                document.getElementById('diagme').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = (diagma * diagme) / 2;
+                htmlResult[5].innerHTML = result
+            }
+            break;
     }
 }
 
@@ -210,125 +337,6 @@ function TrocaArea() {
             d5.style.display = 'none';
             d6.style.visibility = 'visible';
             d6.style.display = 'flex';
-            break;
-    }
-}
-
-function CalculaArea(e) {
-    let result;
-    let htmlResult = document.getElementsByClassName('resultadoArea')
-    verificaResultado = false;
-    switch (e) {
-        // quadrado
-        case '1':
-            var lado = document.getElementById('lado').value;
-            if (lado === "") {
-                alert('Digite um Número')
-                document.getElementById('lado').focus();
-            } else {
-                verificaResultado = true;
-            }
-            if (verificaResultado) {
-                result = Math.pow(lado, 2);
-                htmlResult[0].innerHTML = result
-            }
-            break;
-
-        // retangulo
-        case '2':
-            let base = document.getElementById('base').value;
-            let altura = document.getElementById('altura').value;
-            if (base === "") {
-                alert('Digite um Número')
-                document.getElementById('base').focus();
-            } else if (altura === "") {
-                alert('Digite um Número')
-                document.getElementById('altura').focus();
-            } else {
-                verificaResultado = true;
-            }
-
-            if (verificaResultado) {
-                result = base * altura;
-                htmlResult[1].innerHTML = result
-            }
-            break;
-
-        // triangulo
-        case '3':
-            let base1 = document.getElementById('baset').value;
-            let altura1 = document.getElementById('alturat').value;
-            if (base1 === "") {
-                alert('Digite um Número')
-                document.getElementById('baset').focus();
-            } else if (altura1 === "") {
-                alert('Digite um Número')
-                document.getElementById('alturat').focus();
-            } else {
-                verificaResultado = true;
-            }
-
-            if (verificaResultado) {
-                result = (base1 * altura1) / 2
-                htmlResult[2].innerHTML = result
-            }
-            break;
-
-        // circunferencia
-        case '4':
-            let raio = document.getElementById('raio').value;
-            if (raio === "") {
-                alert('Digite um Número')
-                document.getElementById('raio').focus();
-            } else {
-                verificaResultado = true;
-            }
-            if (verificaResultado) {
-                result = Math.pow(raio, 2) * Math.PI;
-                var aux = result.toFixed(2);
-                result = parseFloat(aux)
-                htmlResult[3].innerHTML = result;
-            }
-            break;
-
-        // Paralelogramo
-        case '5':
-            let base2 = document.getElementById('basep').value;
-            let altura2 = document.getElementById('alturap').value;
-            if (base2 === "") {
-                alert('Digite um Número')
-                document.getElementById('basep').focus();
-            } else if (altura2 === "") {
-                alert('Digite um Número')
-                document.getElementById('alturap').focus();
-            } else {
-                verificaResultado = true;
-            }
-
-            if (verificaResultado) {
-                result = base2 * altura2
-                htmlResult[4].innerHTML = result
-            }
-            break;
-
-        // Losango
-        case '6':
-            let diagma = document.getElementById('diagma').value;
-            let diagme = document.getElementById('diagme').value;
-            if (diagma === "") {
-                alert('Digite um Número')
-                document.getElementById('diagma').focus();
-            } else if (diagme === "") {
-                alert('Digite um Número')
-                document.getElementById('diagme').focus();
-            } else {
-                verificaResultado = true;
-            }
-
-            if (verificaResultado) {
-                result = (diagma * diagme) / 2;
-                htmlResult[5].innerHTML = result
-            }
             break;
     }
 }
