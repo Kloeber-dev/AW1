@@ -296,7 +296,7 @@ a#textoExplicativo:hover {
     transform: scale(1.2);
     transition:  all .4s;
 }
-
+/* AREAS ---------------------------------*/
 select {
     padding: 1rem;
     border-radius: 5px;
@@ -305,13 +305,17 @@ select {
 select:focus {
     transition: all .4s;
 }
-/* AREAS ---------------------------------*/
+
+select ~ img {
+    width: 100%;
+}
+
 #d1 {
     display: flex;
     visibility: visible;
 }
 
-div#d2, div#d3, div#d4, div#d5 {
+div#d2, div#d3, div#d4, div#d5, div#d6 {
     display: none;
     visibility: hidden;
 }

@@ -44,8 +44,10 @@
             <select id="SelectArea" onchange="TrocaArea()">
                 <option value="1">Quadrado</option>
                 <option value="2">Retângulo</option>
-                <option value="3">Triângulo</option>
+                <option value="3">Triângulo Isósceles</option>
                 <option value="4">Circunferência</option>
+                <option value="5">Paralelogramo</option>
+                <option value="6">Losango</option>
             </select>
             <img src="images/area/quadrado.jpg" class="image">
         </div>
@@ -99,6 +101,7 @@
                 <span class="resultadoArea"></span>
             </div>
         </div>
+
         <div class="dados" id='d4'>
             <div style="padding-bottom: 1rem;">
                 <label for="raio">
@@ -106,6 +109,42 @@
                 </label>
                 <input type="number" name="raio" id="raio" placeholder="Digite o Raio">
                 <input type="button" value="Calcular" onclick="CalculaArea('4')">
+            </div>
+            <div>
+                <label for="resultadoArea">Resultado:</label>
+                <span class="resultadoArea"></span>
+            </div>
+        </div>
+
+        <div class="dados" id='d5'>
+            <div style="padding-bottom: 1rem;">
+                <label for="base">
+                    Base
+                </label>
+                <input type="number" name="base" id="basep" placeholder="Digite a base">
+                <label for="altura">
+                    Altura
+                </label>
+                <input type="number" name="altura" id="alturap" placeholder="Digite a altura">
+                <input type="button" value="Calcular" onclick="CalculaArea('5')">
+            </div>
+            <div>
+                <label for="resultadoArea">Resultado:</label>
+                <span class="resultadoArea"></span>
+            </div>
+        </div>
+
+        <div class="dados" id='d6'>
+            <div style="padding-bottom: 1rem;">
+                <label for="diagma">
+                    Diagonal Maior
+                </label>
+                <input type="number" name="diagma" id="diagma" placeholder="Digite a Diagonal Maior">
+                <label for="diagme">
+                    Diagonal Menor
+                </label>
+                <input type="number" name="diagme" id="diagme" placeholder="Digite a Diagonal Menor">
+                <input type="button" value="Calcular" onclick="CalculaArea('6')">
             </div>
             <div>
                 <label for="resultadoArea">Resultado:</label>

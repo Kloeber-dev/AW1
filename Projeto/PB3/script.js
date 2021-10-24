@@ -116,8 +116,9 @@ function TrocaArea() {
     let d2 = document.getElementById("d2");
     let d3 = document.getElementById("d3");
     let d4 = document.getElementById("d4");
+    let d5 = document.getElementById("d5");
+    let d6 = document.getElementById("d6");
     let image = document.getElementsByClassName('image');
-    console.log(image)
 
     switch (valor) {
         case '1':
@@ -130,6 +131,10 @@ function TrocaArea() {
             d3.style.display = 'none';
             d4.style.visibility = 'hidden';
             d4.style.display = 'none';
+            d5.style.visibility = 'hidden';
+            d5.style.display = 'none';
+            d6.style.visibility = 'hidden';
+            d6.style.display = 'none';
             break;
         case '2':
             image[0].src = 'images/area/area_retangulo.png'
@@ -141,6 +146,10 @@ function TrocaArea() {
             d3.style.display = 'none';
             d4.style.visibility = 'hidden';
             d4.style.display = 'none';
+            d5.style.visibility = 'hidden';
+            d5.style.display = 'none';
+            d6.style.visibility = 'hidden';
+            d6.style.display = 'none';
             break;
         case '3':
             image[0].src = 'images/area/triangulo.jpg'
@@ -152,6 +161,10 @@ function TrocaArea() {
             d3.style.display = 'flex';
             d4.style.visibility = 'hidden';
             d4.style.display = 'none';
+            d5.style.visibility = 'hidden';
+            d5.style.display = 'none';
+            d6.style.visibility = 'hidden';
+            d6.style.display = 'none';
             break;
         case '4':
             image[0].src = 'images/area/circunferencia.jpg'
@@ -163,6 +176,40 @@ function TrocaArea() {
             d3.style.display = 'none';
             d4.style.visibility = 'visible';
             d4.style.display = 'flex';
+            d5.style.visibility = 'hidden';
+            d5.style.display = 'none';
+            d6.style.visibility = 'hidden';
+            d6.style.display = 'none';
+            break;
+        case '5':
+            image[0].src = 'images/area/paralelogramo.png'
+            d1.style.visibility = 'hidden';
+            d1.style.display = 'none';
+            d2.style.visibility = 'hidden';
+            d2.style.display = 'none';
+            d3.style.visibility = 'hidden';
+            d3.style.display = 'none';
+            d4.style.visibility = 'hidden';
+            d4.style.display = 'none';
+            d5.style.visibility = 'visible';
+            d5.style.display = 'flex';
+            d6.style.visibility = 'hidden';
+            d6.style.display = 'none';
+            break;
+        case '6':
+            image[0].src = 'images/area/losango.png'
+            d1.style.visibility = 'hidden';
+            d1.style.display = 'none';
+            d2.style.visibility = 'hidden';
+            d2.style.display = 'none';
+            d3.style.visibility = 'hidden';
+            d3.style.display = 'none';
+            d4.style.visibility = 'hidden';
+            d4.style.display = 'none';
+            d5.style.visibility = 'hidden';
+            d5.style.display = 'none';
+            d6.style.visibility = 'visible';
+            d6.style.display = 'flex';
             break;
     }
 }
@@ -241,6 +288,46 @@ function CalculaArea(e) {
                 var aux = result.toFixed(2);
                 result = parseFloat(aux)
                 htmlResult[3].innerHTML = result;
+            }
+            break;
+
+        // Paralelogramo
+        case '5':
+            let base2 = document.getElementById('basep').value;
+            let altura2 = document.getElementById('alturap').value;
+            if (base2 === "") {
+                alert('Digite um Número')
+                document.getElementById('basep').focus();
+            } else if (altura2 === "") {
+                alert('Digite um Número')
+                document.getElementById('alturap').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = base2 * altura2
+                htmlResult[4].innerHTML = result
+            }
+            break;
+
+        // Losango
+        case '6':
+            let diagma = document.getElementById('diagma').value;
+            let diagme = document.getElementById('diagme').value;
+            if (diagma === "") {
+                alert('Digite um Número')
+                document.getElementById('diagma').focus();
+            } else if (diagme === "") {
+                alert('Digite um Número')
+                document.getElementById('diagme').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = (diagma * diagme) / 2;
+                htmlResult[5].innerHTML = result
             }
             break;
     }
