@@ -121,8 +121,7 @@ function TrocaArea() {
 
     switch (valor) {
         case '1':
-            image[0].src = 'images/area/quadrado.png'
-            image[1].src = 'images/area/quadrado.jpg'
+            image[0].src = 'images/area/quadrado.jpg'
             d1.style.visibility = 'visible';
             d1.style.display = 'flex';
             d2.style.visibility = 'hidden';
@@ -134,7 +133,6 @@ function TrocaArea() {
             break;
         case '2':
             image[0].src = 'images/area/area_retangulo.png'
-            image[1].src = 'images/area/area_retangulo.png'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
             d2.style.visibility = 'visible';
@@ -146,7 +144,6 @@ function TrocaArea() {
             break;
         case '3':
             image[0].src = 'images/area/triangulo.jpg'
-            image[1].src = 'images/area/triangulo.jpg'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
             d2.style.visibility = 'hidden';
@@ -158,7 +155,6 @@ function TrocaArea() {
             break;
         case '4':
             image[0].src = 'images/area/circunferencia.jpg'
-            image[1].src = 'images/area/circunferencia.jpg'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
             d2.style.visibility = 'hidden';
@@ -174,35 +170,78 @@ function TrocaArea() {
 function CalculaArea(e) {
     let result;
     let htmlResult = document.getElementsByClassName('resultadoArea')
-    console.log(htmlResult)
+    verificaResultado = false;
     switch (e) {
         // quadrado
         case '1':
             var lado = document.getElementById('lado').value;
-            result = Math.pow(lado, 2);
-            htmlResult[0].innerHTML = result
+            if (lado === "") {
+                alert('Digite um Número')
+                document.getElementById('lado').focus();
+            } else {
+                verificaResultado = true;
+            }
+            if (verificaResultado) {
+                result = Math.pow(lado, 2);
+                htmlResult[0].innerHTML = result
+            }
             break;
+
         // retangulo
         case '2':
-            let base = Number(document.getElementById('base').value);
-            let altura = Number(document.getElementById('altura').value);
-            result = eval(base * altura);
-            htmlResult[1].innerHTML = result
+            let base = document.getElementById('base').value;
+            let altura = document.getElementById('altura').value;
+            if (base === "") {
+                alert('Digite um Número')
+                document.getElementById('base').focus();
+            } else if (altura === "") {
+                alert('Digite um Número')
+                document.getElementById('altura').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = base * altura;
+                htmlResult[1].innerHTML = result
+            }
             break;
+
         // triangulo
         case '3':
             let base1 = document.getElementById('baset').value;
             let altura1 = document.getElementById('alturat').value;
-            result = (base1 * altura1) / 2
-            htmlResult[2].innerHTML = result
+            if (base1 === "") {
+                alert('Digite um Número')
+                document.getElementById('baset').focus();
+            } else if (altura1 === "") {
+                alert('Digite um Número')
+                document.getElementById('alturat').focus();
+            } else {
+                verificaResultado = true;
+            }
+
+            if (verificaResultado) {
+                result = (base1 * altura1) / 2
+                htmlResult[2].innerHTML = result
+            }
             break;
+
         // circunferencia
         case '4':
             let raio = document.getElementById('raio').value;
-            result = Math.pow(raio, 2) * Math.PI;
-            var aux = result.toFixed(2);
-            result = parseFloat(aux)
-            htmlResult[3].innerHTML = result;
+            if (raio === "") {
+                alert('Digite um Número')
+                document.getElementById('raio').focus();
+            } else {
+                verificaResultado = true;
+            }
+            if (verificaResultado) {
+                result = Math.pow(raio, 2) * Math.PI;
+                var aux = result.toFixed(2);
+                result = parseFloat(aux)
+                htmlResult[3].innerHTML = result;
+            }
             break;
     }
 }
