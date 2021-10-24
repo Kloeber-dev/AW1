@@ -1,21 +1,22 @@
 var verificaResultado;
 
 function Inserir(num) {
+    var numero;
     if (verificaResultado) {
         if (num != '/' && num != '*' && num != '+' && num != '-') {
             Limpa();
             verificaResultado = false;
-            var numero = document.getElementById('resultado').innerHTML;
+            numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
         else {
             verificaResultado = false;
-            var numero = document.getElementById('resultado').innerHTML;
+            numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
     }
     else {
-        var numero = document.getElementById('resultado').innerHTML;
+        numero = document.getElementById('resultado').innerHTML;
         document.getElementById('resultado').innerHTML = numero + num;
     }
 }
@@ -198,7 +199,9 @@ function CalculaArea(e) {
         // circunferencia
         case '4':
             let raio = document.getElementById('raio').value;
-            result = Math.round(Math.pow(raio, 2) * Math.PI);
+            result = Math.pow(raio, 2) * Math.PI;
+            var aux = result.toFixed(2);
+            result = parseFloat(aux)
             htmlResult[3].innerHTML = result;
             break;
     }
