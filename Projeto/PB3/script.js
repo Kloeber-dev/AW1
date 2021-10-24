@@ -43,10 +43,10 @@ function Calcula() {
 function Potencia() {
     var base = document.getElementById('base').value;
     var expo = document.getElementById('expoente').value;
-    if (base == "") {
+    if (base === "") {
         alert('Digite um Número');
         document.getElementById('base').focus()
-    } else if (expo == "") {
+    } else if (expo === "") {
         alert('Digite um Número');
         document.getElementById('expoente').focus();
     }
@@ -59,10 +59,10 @@ function Raiz() {
     var rad;
     var indice = document.getElementById('indice').value;
     var radicando = document.getElementById('radicando').value;
-    if (radicando == "") {
+    if (radicando === "") {
         alert('Digite um Número');
         document.getElementById('radicando').focus();
-    } else if (indice < 2 || indice == "") {
+    } else if (indice < 2 || indice === "") {
         alert('Digite um Número que seja maior ou igual a 2');
         document.getElementById('indice').focus();
     } else if (indice % 2 == 0 && radicando < 0) {
@@ -109,3 +109,97 @@ function Fatorial() {
     }
 }
 
+function TrocaArea() {
+    var valor = document.getElementById('SelectArea').value;
+    let d1 = document.getElementById("d1");
+    let d2 = document.getElementById("d2");
+    let d3 = document.getElementById("d3");
+    let d4 = document.getElementById("d4");
+    let image = document.getElementsByClassName('image');
+    console.log(image)
+
+    switch (valor) {
+        case '1':
+            image[0].src = 'images/area/quadrado.png'
+            image[1].src = 'images/area/quadrado.jpg'
+            d1.style.visibility = 'visible';
+            d1.style.display = 'flex';
+            d2.style.visibility = 'hidden';
+            d2.style.display = 'none';
+            d3.style.visibility = 'hidden';
+            d3.style.display = 'none';
+            d4.style.visibility = 'hidden';
+            d4.style.display = 'none';
+            break;
+        case '2':
+            image[0].src = 'images/area/area_retangulo.png'
+            image[1].src = 'images/area/area_retangulo.png'
+            d1.style.visibility = 'hidden';
+            d1.style.display = 'none';
+            d2.style.visibility = 'visible';
+            d2.style.display = 'flex';
+            d3.style.visibility = 'hidden';
+            d3.style.display = 'none';
+            d4.style.visibility = 'hidden';
+            d4.style.display = 'none';
+            break;
+        case '3':
+            image[0].src = 'images/area/triangulo.jpg'
+            image[1].src = 'images/area/triangulo.jpg'
+            d1.style.visibility = 'hidden';
+            d1.style.display = 'none';
+            d2.style.visibility = 'hidden';
+            d2.style.display = 'none';
+            d3.style.visibility = 'visible';
+            d3.style.display = 'flex';
+            d4.style.visibility = 'hidden';
+            d4.style.display = 'none';
+            break;
+        case '4':
+            image[0].src = 'images/area/circunferencia.jpg'
+            image[1].src = 'images/area/circunferencia.jpg'
+            d1.style.visibility = 'hidden';
+            d1.style.display = 'none';
+            d2.style.visibility = 'hidden';
+            d2.style.display = 'none';
+            d3.style.visibility = 'hidden';
+            d3.style.display = 'none';
+            d4.style.visibility = 'visible';
+            d4.style.display = 'flex';
+            break;
+    }
+}
+
+function CalculaArea(e) {
+    let result;
+    let htmlResult = document.getElementsByClassName('resultadoArea')
+    console.log(htmlResult)
+    switch (e) {
+        // quadrado
+        case '1':
+            var lado = document.getElementById('lado').value;
+            result = Math.pow(lado, 2);
+            htmlResult[0].innerHTML = result
+            break;
+        // retangulo
+        case '2':
+            let base = Number(document.getElementById('base').value);
+            let altura = Number(document.getElementById('altura').value);
+            result = eval(base * altura);
+            htmlResult[1].innerHTML = result
+            break;
+        // triangulo
+        case '3':
+            let base1 = document.getElementById('baset').value;
+            let altura1 = document.getElementById('alturat').value;
+            result = (base1 * altura1) / 2
+            htmlResult[2].innerHTML = result
+            break;
+        // circunferencia
+        case '4':
+            let raio = document.getElementById('raio').value;
+            result = Math.round(Math.pow(raio, 2) * Math.PI);
+            htmlResult[3].innerHTML = result;
+            break;
+    }
+}

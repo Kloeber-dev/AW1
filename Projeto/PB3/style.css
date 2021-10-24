@@ -120,9 +120,11 @@ label[for="bt_menu"]{
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.calculator {
+#container > div.calculator {
+    flex-direction: row;
     width: 20rem;
     height: 32.5rem;
     background-color: var(--cinza-claro);
@@ -137,6 +139,7 @@ label[for="bt_menu"]{
 }
 
 #resultado {
+    overflow: hidden;
     width: 88%;
     height: 9%;
     display: flex;
@@ -167,7 +170,7 @@ label[for="bt_menu"]{
 
 .number:hover, .op:hover {
     background-color: var(--cinza-escuro);
-    transition: 0.2s;
+    transition: all .4s;
 }
 
 .operator:active, .number:active {
@@ -181,6 +184,7 @@ label[for="bt_menu"]{
 }
 
 .c1:hover, .c2:hover, .c3:hover, .c4:hover, .c5:hover {
+    transition: all .4s;
     opacity: 1;
 }
 
@@ -208,7 +212,7 @@ label[for="bt_menu"]{
     background-color: var(--verde);
 }
 
-/* POTENCIAS ============================================================ */
+/* PAGINAS ============================================================ */
 .dados {
     background-color: var(--cinza-claro);
     height: 30vh;
@@ -225,7 +229,7 @@ label {
     padding: 1rem;
 }
 
-input {
+input, option, select {
     border: solid 1px var(--cinza-escuro);
     border-radius: 5px;
     padding: 1rem;
@@ -260,6 +264,8 @@ input[type=number] {
 
 #container > div {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
 }
 
@@ -270,7 +276,26 @@ input[type=number] {
 #textoExplicativo {
     padding: 0.7rem;
     text-align: justify;
-    width: 80vw;
+    width: 100%;
+}
+
+select {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+select:focus {
+    transition: all .4s;
+}
+/* AREAS ---------------------------------*/
+#d1 {
+    display: flex;
+    visibility: visible;
+}
+
+div#d2, div#d3, div#d4, div#d5 {
+    display: none;
+    visibility: hidden;
 }
 
 /* FOOTER-------------------- */
@@ -305,17 +330,20 @@ input[type=number] {
 ::-webkit-scrollbar {
     width:10px;
     height: 10px;
+    border-radius: 5px;
 }
      
 ::-webkit-scrollbar-track {
-    background:#fff;
+    background:var(--cinza-claro);
 }
      
 ::-webkit-scrollbar-thumb {
-    background: var(--cinza-claro);
+    background: var(--cinza-escuro);
+    border-radius: 5px;
+
 }
 
-#resultadop {
+#resultadop, .resultadoArea {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
