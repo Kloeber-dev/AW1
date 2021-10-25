@@ -126,8 +126,8 @@ function CalculaArea(e) {
         // quadrado
         case '1':
             var lado = document.getElementById('lado').value;
-            if (lado === "") {
-                Swal.fire('Digite um Número')
+            if (lado === "" || lado < 0) {
+                Swal.fire('Digite um Número Natural Natural')
                 document.getElementById('lado').focus();
             } else {
                 verificaResultado = true;
@@ -142,11 +142,11 @@ function CalculaArea(e) {
         case '2':
             let base = document.getElementById('base').value;
             let altura = document.getElementById('altura').value;
-            if (base === "") {
-                Swal.fire('Digite um Número')
+            if (base === "" || base < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('base').focus();
-            } else if (altura === "") {
-                Swal.fire('Digite um Número')
+            } else if (altura === "" || altura < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('altura').focus();
             } else {
                 verificaResultado = true;
@@ -162,11 +162,11 @@ function CalculaArea(e) {
         case '3':
             let base1 = document.getElementById('baset').value;
             let altura1 = document.getElementById('alturat').value;
-            if (base1 === "") {
-                Swal.fire('Digite um Número')
+            if (base1 === "" || base1 < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('baset').focus();
-            } else if (altura1 === "") {
-                Swal.fire('Digite um Número')
+            } else if (altura1 === "" || altura1 < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('alturat').focus();
             } else {
                 verificaResultado = true;
@@ -181,8 +181,8 @@ function CalculaArea(e) {
         // circunferencia
         case '4':
             let raio = document.getElementById('raio').value;
-            if (raio === "") {
-                Swal.fire('Digite um Número')
+            if (raio === "" || raio < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('raio').focus();
             } else {
                 verificaResultado = true;
@@ -199,11 +199,11 @@ function CalculaArea(e) {
         case '5':
             let base2 = document.getElementById('basep').value;
             let altura2 = document.getElementById('alturap').value;
-            if (base2 === "") {
-                Swal.fire('Digite um Número')
+            if (base2 === "" || base2 < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('basep').focus();
-            } else if (altura2 === "") {
-                Swal.fire('Digite um Número')
+            } else if (altura2 === "" || altura2 < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('alturap').focus();
             } else {
                 verificaResultado = true;
@@ -219,11 +219,11 @@ function CalculaArea(e) {
         case '6':
             let diagma = document.getElementById('diagma').value;
             let diagme = document.getElementById('diagme').value;
-            if (diagma === "") {
-                Swal.fire('Digite um Número')
+            if (diagma === "" || diagma < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('diagma').focus();
-            } else if (diagme === "") {
-                Swal.fire('Digite um Número')
+            } else if (diagme === "" || diagme < 0) {
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('diagme').focus();
             } else {
                 verificaResultado = true;
