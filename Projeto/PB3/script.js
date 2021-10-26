@@ -127,7 +127,7 @@ function CalculaArea(e) {
         case '1':
             var lado = document.getElementById('lado').value;
             if (lado === "" || lado < 0) {
-                Swal.fire('Digite um Número Natural Natural')
+                Swal.fire('Digite um Número Natural')
                 document.getElementById('lado').focus();
             } else {
                 verificaResultado = true;
