@@ -388,6 +388,7 @@ div#Area {
         display: block;
     }
     #Area {
+        transition: all .4s;
         max-width: 900px;
     }
 }
