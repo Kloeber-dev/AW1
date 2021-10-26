@@ -141,7 +141,7 @@ label[for="bt_menu"]{
 #resultado {
     overflow: hidden;
     width: 88%;
-    height: 9%;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: right;
