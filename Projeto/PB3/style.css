@@ -319,6 +319,16 @@ div#d2, div#d3, div#d4, div#d5, div#d6 {
     visibility: hidden;
 }
 
+div#Area {
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.Conteudo {
+    padding:  1rem 0;
+    display: flex;
+}
+
 /* FOOTER-------------------- */
 #idFooter {
     height: 4.375rem;
@@ -377,6 +387,9 @@ div#d2, div#d3, div#d4, div#d5, div#d6 {
     #imageNoCheck2 {
         display: block;
     }
+    #Area {
+        max-width: 900px;
+    }
 }
 
 @media (min-width: 500px) and (max-width:900px) {
@@ -406,6 +419,12 @@ div#d2, div#d3, div#d4, div#d5, div#d6 {
         margin: 8px;
         height: 40px;
         width: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .image {
+        width: 100%;
     }
 }
 
@@ -485,5 +504,12 @@ div#d2, div#d3, div#d4, div#d5, div#d6 {
         line-height: 2rem;
         font-size: 1rem;
         height: 20vh;
+    }
+    /* AREAS */
+    .Conteudo {
+        padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
     }
 }

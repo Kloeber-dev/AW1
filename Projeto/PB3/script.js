@@ -245,10 +245,12 @@ function TrocaArea() {
     let d4 = document.getElementById("d4");
     let d5 = document.getElementById("d5");
     let d6 = document.getElementById("d6");
+    let tagp = document.getElementById("conteudoarea")
     let image = document.getElementsByClassName('image');
 
     switch (valor) {
         case '1':
+            tagp.innerHTML = "Para fazer o cálculo da área do quadrado é necessário realizar o produto entre dois lados.Como o quadrado tem lados iguais, basta pegar a medida de um dos lados e elevar ao quadrado.Para a realização usamos a fórmula da área A = b.h, assim um de seus lados será a base(b) e o outro a altura(h)."
             image[0].src = 'images/area/quadrado.jpg'
             d1.style.visibility = 'visible';
             d1.style.display = 'flex';
@@ -264,6 +266,7 @@ function TrocaArea() {
             d6.style.display = 'none';
             break;
         case '2':
+            tagp.innerHTML = "A área de um retângulo pode ser calculada por meio da fórmula A = b·h, em que b é a base (ou largura) e h é a altura (ou comprimento)."
             image[0].src = 'images/area/area_retangulo.png'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
@@ -279,6 +282,7 @@ function TrocaArea() {
             d6.style.display = 'none';
             break;
         case '3':
+            tagp.innerHTML = "Para calcular a área de qualquer triângulo, basta calcular o produto entre o comprimento da base e o da altura e dividir por dois";
             image[0].src = 'images/area/triangulo.jpg'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
@@ -294,6 +298,7 @@ function TrocaArea() {
             d6.style.display = 'none';
             break;
         case '4':
+            tagp.innerHTML = "A área de um círculo é pi vezes o raio elevado ao quadrado (A = π r²).";
             image[0].src = 'images/area/circunferencia.jpg'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
@@ -309,6 +314,7 @@ function TrocaArea() {
             d6.style.display = 'none';
             break;
         case '5':
+            tagp.innerHTML = "A área do paralelogramo pode ser calculada pela multiplicação da medida de sua base pela medida de sua altura, também chamadas de comprimento e largura.";
             image[0].src = 'images/area/paralelogramo.png'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
@@ -324,6 +330,7 @@ function TrocaArea() {
             d6.style.display = 'none';
             break;
         case '6':
+            tagp.innerHTML = "Para calcularmos a área de um losango devemos realizar o produto entre as medidas das diagonais e dividir por dois. Ao traçarmos as diagonais, quatro triângulos retângulos são formados. Então, a área é igual a área dos quatros triângulos.";
             image[0].src = 'images/area/losango.png'
             d1.style.visibility = 'hidden';
             d1.style.display = 'none';
