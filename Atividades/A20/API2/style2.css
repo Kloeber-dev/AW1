@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: white gray;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid gray;
+  }
+
+html {
+    background: url('https://img.elo7.com.br/product/600x380/19B8CD5/papel-de-parede-adesivo-music-piano.jpg');
+    background-color: rgba(133, 23, 133, 1);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    padding: 1rem 0;
+}
+
+input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+    height: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+input:focus{
+    outline: none !important;
+    border-color:rgba(133, 23, 133, 1);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.container, .musica {
+    display: flex;
+    background-color: rgba(133, 23, 133, 1);
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 50vh;
+    padding: 3rem;
+    border-radius: 12px;
+    -webkit-box-shadow: 13px 13px 0px 5px #000000; 
+    box-shadow: 13px 13px 0px 5px #000000;
+    width: 40%;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+pre {
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.musica {
+    max-height: 30vh;
+    overflow-y: scroll;
+}
+
+.btn {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+    color: white;
+    background-color:crimson;
+    border: none
+}
+
+.btn:hover, .btn:focus {
+    transform: scale(1.1);
+    background-color: turquoise;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lyrics_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
